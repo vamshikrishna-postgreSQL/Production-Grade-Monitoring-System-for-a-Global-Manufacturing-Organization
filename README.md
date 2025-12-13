@@ -1,4 +1,4 @@
-# Global Manufacturing Monitoring System
+# Production-grade monitoring system for a global manufacturing organization
 Enterprise-grade TimescaleDB architecture for monitoring 10,000+ machines across 50 facilities worldwide.
 
 This repository contains:
