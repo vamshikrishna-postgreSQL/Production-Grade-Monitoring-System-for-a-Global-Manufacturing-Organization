@@ -144,16 +144,16 @@ mkfs.xfs -f -L pgdata /dev/mapper/data_vg
 - `/backup/pg` - Backup staging
 
 ### 3.4 Tablespace Layout
--- Hot data (default)
+#### Hot data (default)
 CREATE TABLESPACE hot_data 
-    LOCATION '/var/lib/postgresql/14/main';
--- Warm data
+LOCATION '/var/lib/postgresql/14/main';
+#### Warm data
 CREATE TABLESPACE warm_data 
-    LOCATION '/var/lib/postgresql/tablespaces/warm';
--- Cold data
+LOCATION '/var/lib/postgresql/tablespaces/warm';
+#### Cold data
 CREATE TABLESPACE cold_data 
-    LOCATION '/var/lib/postgresql/tablespaces/cold';
--- Indexes
+LOCATION '/var/lib/postgresql/tablespaces/cold';
+#### Indexes
 CREATE TABLESPACE index_space 
     LOCATION '/var/lib/postgresql/tablespaces/indexes';
 
