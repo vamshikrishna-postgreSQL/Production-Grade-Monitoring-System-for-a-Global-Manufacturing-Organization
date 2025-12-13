@@ -1,7 +1,7 @@
 # 1. System Overview
   This system ingests, stores, and analyzes 500,000 metrics/sec from 10,000+ machines across 50 global manufacturing facilities, with:
-  •	18-month retention
-  •	Regional data sovereignty
+  - 18-month retention
+  - Regional data sovereignty
   •	99.99% uptime
   •	14-day PITR
   •	<1-hour RTO, <5-minute RPO
