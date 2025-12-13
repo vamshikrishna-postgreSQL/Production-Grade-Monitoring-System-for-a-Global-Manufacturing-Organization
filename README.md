@@ -33,3 +33,10 @@ This repository contains:
 - Real-time + batch analytics  
 - 18-month retention w/ compression  
 - PITR + 14-day WAL window  
+
+
+---
+
+    Document Version: 1.3  
+    Last Updated: December 2025 
+    Author: Vamshikrishna B
