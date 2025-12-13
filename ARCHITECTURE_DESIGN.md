@@ -1,4 +1,4 @@
-1. System Overview
+# 1. System Overview
   This system ingests, stores, and analyzes 500,000 metrics/sec from 10,000+ machines across 50 global manufacturing facilities, with:
   •	18-month retention
   •	Regional data sovereignty
@@ -8,7 +8,7 @@
   •	Real-time + batch analytics
   The design uses TimescaleDB on PostgreSQL, deployed in regionally isolated clusters with cross-region DR replication where allowed by policy.
  
-2. Hardware & Infrastructure Specification
+# 2. Hardware & Infrastructure Specification
 Database Nodes (per region)
 Role	Count	Specification
 Primary	3-node HA cluster	32 cores, 256GB RAM, NVMe SSD RAID10
