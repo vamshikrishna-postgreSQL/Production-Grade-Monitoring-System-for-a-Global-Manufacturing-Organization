@@ -1,0 +1,5 @@
+## Disaster Recovery – Failing Over an Entire Region
+- Each region is associated with a designated disaster recovery (DR) region that consistently receives replicated data. In the primary region, synchronous replication safeguards against node failures. In the event of regional disasters (such as power outages, network failures, or natural calamities), data is transmitted asynchronously to the DR region through logical replication or WAL shipping, ensuring that recovery point objectives are maintained within five minutes.
+- In the event of a complete regional failure, a systematic failover procedure is initiated: the DR cluster is elevated to primary status, application traffic is redirected through DNS or global load balancers, and write access is granted. Since DR regions are pre-provisioned and regularly updated, the recovery time objective is kept to under one hour. After the original region is restored, data is resynchronized, and roles are either reversed or normalized.
+
+<img width="438" height="391" alt="image" src="https://github.com/user-attachments/assets/0380937c-853e-4265-9305-cae2c2ba6694" />
