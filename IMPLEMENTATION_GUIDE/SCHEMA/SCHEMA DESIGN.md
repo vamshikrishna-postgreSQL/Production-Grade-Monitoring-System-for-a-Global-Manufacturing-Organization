@@ -1,4 +1,4 @@
-REFERENCE TABLE
+# REFERENCE TABLE
 CREATE TABLE facilities (
   facility_id UUID PRIMARY KEY,
   region TEXT,
