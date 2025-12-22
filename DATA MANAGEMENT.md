@@ -1,0 +1,5 @@
+## Data Management – Transitioning Data to More Economical Storage Over 18 Months
+- To effectively manage 18 months of retained data in a cost-efficient manner, I would establish an automated tiered storage lifecycle utilizing TimescaleDB policies. Recent data (for instance, the last 30 days) is kept uncompressed on high-performance storage to facilitate real-time monitoring. As the data ages, it is automatically compressed and transferred to slower, more affordable disks while still being queryable. After reaching a certain age (for example, 6 months), raw data is eliminated and substituted with pre-aggregated summaries, which significantly decreases storage volume.
+- This procedure is entirely automated through retention, compression, and continuous aggregation policies. From the application's standpoint, queries remain consistent, but the system seamlessly accesses the appropriate storage tier. This strategy effectively balances performance, compliance, and cost without requiring manual intervention.
+
+<img width="816" height="233" alt="image" src="https://github.com/user-attachments/assets/2e61e299-fbdb-4ee1-b497-edbfc9a204e9" />
