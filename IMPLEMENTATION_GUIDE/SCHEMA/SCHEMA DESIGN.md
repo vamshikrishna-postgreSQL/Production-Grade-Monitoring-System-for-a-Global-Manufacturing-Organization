@@ -1,4 +1,4 @@
-# REFERENCE TABLE
+### REFERENCE TABLE
 CREATE TABLE facilities (
   facility_id UUID PRIMARY KEY,
   region TEXT,
@@ -12,7 +12,7 @@ CREATE TABLE machines (
 );
 
 
-Hypertable
+### Hypertable
 CREATE TABLE sensor_data (
   timestamp TIMESTAMPTZ NOT NULL,
   facility_id UUID NOT NULL,
@@ -32,7 +32,7 @@ SELECT create_hypertable(
 );
 
 
-Compression & Retention
+### Compression & Retention
 
 ALTER TABLE sensor_data SET (
   timescaledb.compress,
